@@ -7,5 +7,15 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class HelloPathsController {
 
+    @GetMapping("/hello")
+    @ResponseBody
+    public String home() {
+        return "Hello";
+    }
 
+    @GetMapping("/paths")
+    @ResponseBody
+    public String path() {
+        return "Paths";
+    }
 }
