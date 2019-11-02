@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Controller
 public class HelloListController {
 
-    private List<String> list;
+    private final List<String> list;
 
     public HelloListController() {
         this.list = new ArrayList<>();
@@ -21,6 +21,7 @@ public class HelloListController {
 
     @GetMapping("/")
     public String home(Model model) {
+        model.addAttribute("list", list);
         return "index";
     }
 

@@ -8,7 +8,9 @@
         <h1>Hello List!</h1>
 
         <!-- lisää toiminnallisuus listalla olevien arvojen listaamiseen tänne -->
-
+        <p th:each="alkio : ${list}">
+            <span th:text="${alkio}">hello world!</span>
+        </p>
 
         <!-- Älä koske alla olevaan lomakkeeseen, tutustumme 
         tiedon lisäämiseen hieman myöhemmin -->
