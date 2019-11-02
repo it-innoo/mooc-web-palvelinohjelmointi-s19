@@ -19,6 +19,11 @@ public class HelloObjectsController {
     }
 
     // Tee tänne juuripolkuun tulevan GET-tyyppisen pyynnön käsittelevä metodi
+    @GetMapping("/")
+    public String home(Model malli) {
+        malli.addAttribute("items", items);
+        return "index";
+    }
 
     // Älä koske tähän metodiin -- tutustumme tiedon lisäämiseen hieman myöhemmin.
     @PostMapping("/")

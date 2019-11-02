@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<!-- <html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"> -->
+<html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <title>Items</title>
     </head>
@@ -8,6 +9,12 @@
         <h1>Items</h1>
 
         <!-- lisää toiminnallisuus listalla olevien esineiden listaamiseen -->
+        <ol>
+        <li data-th-each="item : ${items}">
+            <span data-th-text="${item.name}">Esimerkkihenkilö</span>
+            (<span data-th-text="${item.type}">(Esimerkkituuppi)</span>)
+        </li>
+        </ol>
 
         
         <!-- Älä koske alla olevaan lomakkeeseen, tutustumme 
