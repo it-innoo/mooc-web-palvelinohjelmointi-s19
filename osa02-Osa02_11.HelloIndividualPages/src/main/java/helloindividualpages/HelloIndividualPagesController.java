@@ -33,4 +33,10 @@ public class HelloIndividualPagesController {
         model.addAttribute("items", this.items.values());
         return "index";
     }
+
+    @GetMapping("/{id}")
+    public String getOne(Model model, @PathVariable String id) {
+        model.addAttribute("item", this.items.get(id));
+        return "single";
+    }
 }
