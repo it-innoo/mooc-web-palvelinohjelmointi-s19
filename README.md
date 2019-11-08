@@ -10,4 +10,8 @@ Ensimmäisen osan jälkeen tiedät pääpiirteittäin miten internet toimii. Tun
 
 Toisen osan jälkeen osaat muodostaa HTML-muotoisia näkymätemplateja ja käyttää Thymeleaf-kirjastoa käyttäjälle palautettavien näkymien luontiin. Opit käyttämään lomakkeita tiedon lähettämiseen palvelimelle, ja opit luomaan lähetettyä tietoa käsitteleviä palvelinohjelmistoja. Opit POST/Redirect/GET-suunnittelumallin ja osaat palauttaa palvelimelta uudelleenohjauspyynnön. Tutustut tietokantojen käyttöön web-sovelluksissa ORM-kirjastoja käyttäen ja opit luomaan web-sovelluksia, jotka käyttävät yhtä tietokantataulua. Opit käsitteen polkumuuttuja ja käytät polkumuuttujia sovelluksissasi.
 
+#### Osa 3
+
+Kolmannen osan jälkeen osaat luoda useampia tietokantatauluja sisältäviä ja käsitteleviä web-sovelluksia. Osaat määritellä yhdestä moneen ja monesta moneen -yhteyksiä luokkien välille ja tiedät miten näihin yhteyksiin lisätään tietoa sovelluksessa. Tiedät miten sovelluksessa voidaan määritellä tietokantatransaktio. Tunnet N+1 kyselyn ongelman ja tiedät joitakin menetelmiä sen välttämiseen. Osaat järjestää ja rajata tietokannasta haettavaa tietoa.
+
 
