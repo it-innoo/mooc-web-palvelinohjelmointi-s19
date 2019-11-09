@@ -33,4 +33,13 @@ public class AircraftController {
         return "redirect:/aircrafts";
     }
 
+    @PostMapping("/aircrafts/{aircraftId}/airports")
+    public String assignAirport(@PathVariable Long aircraftId, @RequestParam Long airportId) {
+        Aircraft a = aircraftRepository.getOne(aircraftId);
+        Airport ap = airportRepository.getOne(airportId);
+        a.setAirport(ap);
+        aircraftRepository.save(a);
+        
+        return "redirect:/aircrafts";
+    }
 }
