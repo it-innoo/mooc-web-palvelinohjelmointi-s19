@@ -14,4 +14,8 @@ Toisen osan jälkeen osaat muodostaa HTML-muotoisia näkymätemplateja ja käytt
 
 Kolmannen osan jälkeen osaat luoda useampia tietokantatauluja sisältäviä ja käsitteleviä web-sovelluksia. Osaat määritellä yhdestä moneen ja monesta moneen -yhteyksiä luokkien välille ja tiedät miten näihin yhteyksiin lisätään tietoa sovelluksessa. Tiedät miten sovelluksessa voidaan määritellä tietokantatransaktio. Tunnet N+1 kyselyn ongelman ja tiedät joitakin menetelmiä sen välttämiseen. Osaat järjestää ja rajata tietokannasta haettavaa tietoa.
 
+#### Osa 4
+
+Neljännen osan jälkeen tunnet käsitteen mediatyyppi ja osaat tallentaa tiedostoja tietokantaan sekä hakea niitä sieltä. Tutustut pintapuolisesti ohjelmistokehitysprosessin vaiheisiin. Ymmärrät web-sovelluksen rakenteen ja osaat tulkita sitä sekä MVC-mallin että kerrosarkkitehtuurin kautta. Osaat määritellä sovellukseesi palveluita. Opit kirjoittamaan automaattisesti suoritettavia integraatio- ja järjestelmätason testejä, ja opit siirtämään sovelluksesi pilvipalveluun kaikkien saataville.
+
 
