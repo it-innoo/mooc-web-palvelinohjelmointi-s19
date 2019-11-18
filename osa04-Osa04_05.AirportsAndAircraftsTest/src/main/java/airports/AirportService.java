@@ -15,6 +15,10 @@ public class AirportService {
     }
 
     public void create(String identifier, String name) {
+        if (airportRepository.findByName(name) != null) {
+            return;
+        }
+
         Airport a = new Airport();
         a.setIdentifier(identifier);
         a.setName(name);
