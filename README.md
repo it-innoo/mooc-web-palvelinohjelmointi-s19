@@ -18,4 +18,6 @@ Kolmannen osan jälkeen osaat luoda useampia tietokantatauluja sisältäviä ja 
 
 Neljännen osan jälkeen tunnet käsitteen mediatyyppi ja osaat tallentaa tiedostoja tietokantaan sekä hakea niitä sieltä. Tutustut pintapuolisesti ohjelmistokehitysprosessin vaiheisiin. Ymmärrät web-sovelluksen rakenteen ja osaat tulkita sitä sekä MVC-mallin että kerrosarkkitehtuurin kautta. Osaat määritellä sovellukseesi palveluita. Opit kirjoittamaan automaattisesti suoritettavia integraatio- ja järjestelmätason testejä, ja opit siirtämään sovelluksesi pilvipalveluun kaikkien saataville.
 
+#### Osa 5
 
+Viidennen osan jälkeen tunnet käsitteen tilattomuus. Tiedät mitä evästeet ovat ja tiedät mihin evästeitä käytetään, ja osaat luoda sovelluksen, joka pitää kirjaa käyttäjistä evästeiden avulla. Tunnet evästeisiin liittyviä oleellisia lakiteknisia asioita. Tiedät autentikaation ja autorisaation erot, ja osaat luoda sovelluksen, joka pyytää käyttäjää kirjautumaan. Osaat määritellä kirjautumista vaativia polkuja ja metodeja, sekä piilottaa näkymän osia erilaisilta käyttäjäryhmiltä.
