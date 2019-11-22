@@ -16,6 +16,7 @@ public class ItemController {
 
     @PostConstruct
     public void init() {
+        itemRepository.deleteAll();
         // add some content to the product repository
         itemRepository.save(new Item("Pee Cola", 2.0));
         itemRepository.save(new Item("Clay Modeling with Pooh", 10.0));
