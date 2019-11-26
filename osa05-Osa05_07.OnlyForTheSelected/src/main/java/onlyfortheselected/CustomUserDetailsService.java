@@ -1,7 +1,10 @@
 package onlyfortheselected;
 
 import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -21,6 +24,11 @@ public class CustomUserDetailsService implements UserDetailsService {
             throw new UsernameNotFoundException("No such user: " + username);
         }
 
+        Set<GrantedAuthority> grantedAuthorities = new HashSet<>();
+        for (String authority : account.getAuthorities()){
+            grantedAuthorities.add(new SimpleGrantedAuthority(authority));
+        }
+
         return new org.springframework.security.core.userdetails.User(
         account.getUsername(),
         account.getPassword(),
@@ -28,6 +36,6 @@ public class CustomUserDetailsService implements UserDetailsService {
         true,
         true,
         true,
-        Arrays.asList(new SimpleGrantedAuthority("USER")));
+        grantedAuthorities);
     }
 }
