@@ -17,9 +17,10 @@
             </section>
 
             <section class="container">
-                <p>
-                    ... when you've finished it!
-                </p>
+                <form class="form-inline" th:action="@{/form}" method="POST">
+                    <input type="text" class="form-control  mb-2 mr-sm-2" id="name" name="name"/>
+                    <button class="mb-2" type="submit">Submit</button>
+                </form>
             </section>
         </main>
 
