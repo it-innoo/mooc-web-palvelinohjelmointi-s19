@@ -21,3 +21,9 @@ Neljännen osan jälkeen tunnet käsitteen mediatyyppi ja osaat tallentaa tiedos
 #### Osa 5
 
 Viidennen osan jälkeen tunnet käsitteen tilattomuus. Tiedät mitä evästeet ovat ja tiedät mihin evästeitä käytetään, ja osaat luoda sovelluksen, joka pitää kirjaa käyttäjistä evästeiden avulla. Tunnet evästeisiin liittyviä oleellisia lakiteknisia asioita. Tiedät autentikaation ja autorisaation erot, ja osaat luoda sovelluksen, joka pyytää käyttäjää kirjautumaan. Osaat määritellä kirjautumista vaativia polkuja ja metodeja, sekä piilottaa näkymän osia erilaisilta käyttäjäryhmiltä.
+
+#### Osa 6
+
+Kuudennen osan jälkeen tunnet menetelmiä toistuvien sivurakenteiden määrittelyyn ja uudelleenkäyttöön. Tutustut tyylitiedostojen käyttöön sekä Twitter Bootstrap -kirjastoon ja opit määrittelemään Twitter Bootstrapia käyttäen tyylejä sovelluksen sivuille. Opit menetelmiä tiedon validointiin ja harjoittelet lomakedatan validointia. Tunnet käsitteen rajapinta ja tiedät mitä REST-rajapinnat ovat. Osaat toteuttaa palvelun, joka tarjoaa dataa REST-muotoisen rajapinnan yli.
+
+
