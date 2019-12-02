@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
-    <head>
+    <head th:fragment="head">
         <meta charset="UTF-8" />
-        <title>Title</title>
+        <title th:text="${title}">TODO supply a title</title>
     </head>
     <body>
         <header th:fragment="header">
@@ -21,7 +21,20 @@
             </nav>
         </header>
 
-
+        <table th:fragment="tracktable(tracks)">
+            <tr>
+                <th>Band</th>
+                <th>Title</th>
+                <th>Released</th>
+                <th>Duration in Seconds</th>
+            </tr>
+            <tr th:each="track : ${tracks}">
+                <td th:text="${track.band}"></td>
+                <td th:text="${track.title}"></td>
+                <td th:text="${#temporals.format(track.released, 'yyyy-MM-dd')}"></td>
+                <td th:text="${track.durationInSeconds}"></td>
+            </tr>
+        </table>
 
     </body>
 </html>

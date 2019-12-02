@@ -1,8 +1,7 @@
 <!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
-    <head>
-        <meta charset="UTF-8" />
-        <title>Tracks</title>
+    <head th:replace="fragments/layout :: head(title='Tracks')">
+        <title>title</title>
     </head>
     <body>
         <header th:replace="fragments/layout :: header">
@@ -11,20 +10,7 @@
 
         <main>
             <h2>Tracks</h2>
-            <table>
-                <tr>
-                    <th>Band</th>
-                    <th>Title</th>
-                    <th>Released</th>
-                    <th>Duration in Seconds</th>
-                </tr>
-                <tr th:each="track : ${tracks}">
-                    <td th:text="${track.band}"></td>
-                    <td th:text="${track.title}"></td>
-                    <td th:text="${#temporals.format(track.released, 'yyyy-MM-dd')}"></td>
-                    <td th:text="${track.durationInSeconds}"></td>
-                </tr>
-            </table>
+            <div th:replace="fragments/layout :: tracktable(tracks=${tracks})"></div>
 
             <h2>Add a track</h2>
             <form th:action="@{/tracks}" method="POST">
